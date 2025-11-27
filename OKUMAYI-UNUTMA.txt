@@ -1,0 +1,95 @@
+═════════════════════════════════════════════════════════════════
+          HALK EĞİTİM BORDRO YÖNETİM SİSTEMİ
+                 KULLANIM KILAVUZU
+═════════════════════════════════════════════════════════════════
+
+🎯 PROGRAM HAKKINDA
+─────────────────────────────────────────────────────────────────
+Bu program, Halk Eğitim Merkezlerinde çalışan usta öğreticilerin
+bordro hesaplamalarını yapmak için geliştirilmiştir.
+
+Özellikler:
+• Usta öğretici kayıt ve yönetimi
+• Otomatik bordro hesaplama
+• SGK primi hesaplama (emekli/işsiz durumuna göre)
+• Gelir vergisi hesaplama (artan oranlı)
+• Bordro yazdırma
+• Veri yedekleme ve geri yükleme
+
+
+📋 KURULUM
+─────────────────────────────────────────────────────────────────
+1. Node.js Kurulumu (İlk kez kullanıyorsanız):
+   - https://nodejs.org/ adresine gidin
+   - "LTS" sürümünü indirin ve kurun
+   - Kurulum sırasında varsayılan ayarları kabul edin
+
+2. Program Kurulumu:
+   - KURULUM.bat dosyasına çift tıklayın
+   - Kurulum otomatik olarak tamamlanacaktır
+   - Tarayıcınızda program açılacaktır
+
+
+🚀 KULLANIM
+─────────────────────────────────────────────────────────────────
+• Program Başlatma: BASLAT.bat dosyasına çift tıklayın
+• Program Durdurma: DURDUR.bat dosyasına çift tıklayın
+
+Program adres: http://localhost:5173
+
+⚠️ ÖNEMLİ: Program çalışırken komut satırı penceresini kapatmayın!
+
+
+📊 BORDRO HESAPLAMA
+─────────────────────────────────────────────────────────────────
+1. Önce "Usta Öğreticiler" sayfasından öğretici ekleyin
+2. "Bordrolar" sayfasından "Yeni Bordro" butonuna tıklayın
+3. Usta öğretici seçin ve saat/gün bilgilerini girin
+4. "Hesapla ve Kaydet" butonuna tıklayın
+
+Hesaplama Detayları:
+• Emekli Usta: Sadece iştirakçi payı kesilir
+• İşsiz Usta: İşçi payı + iştirakçi payı kesilir
+• Vergi: Yıllık kümülatif gelire göre artan oranlı hesaplanır
+
+
+💾 VERİ YEDEKLEMESİ
+─────────────────────────────────────────────────────────────────
+Verileriniz tarayıcınızın yerel deposunda saklanır.
+
+Yedekleme:
+1. "Ayarlar" sayfasına gidin
+2. "Verileri Dışa Aktar" butonuna tıklayın
+3. JSON dosyası otomatik indirilecektir
+
+Geri Yükleme:
+1. "Ayarlar" sayfasına gidin
+2. "Verileri İçe Aktar" butonuna tıklayın
+3. Daha önce indirdiğiniz JSON dosyasını seçin
+
+
+❓ SORUN GİDERME
+─────────────────────────────────────────────────────────────────
+Soru: Program açılmıyor?
+Cevap: Node.js kurulu olduğundan emin olun.
+       Komut satırında "node --version" yazarak kontrol edin.
+
+Soru: Tarayıcıda sayfa açılmıyor?
+Cevap: http://localhost:5173 adresini manuel olarak açın.
+       Başka bir program 5173 portunu kullanıyor olabilir.
+
+Soru: Verilerim silindi?
+Cevap: Tarayıcı geçmişi temizlendiğinde veriler silinebilir.
+       Düzenli olarak "Verileri Dışa Aktar" ile yedek alın.
+
+
+📝 TEKNİK BİLGİLER
+─────────────────────────────────────────────────────────────────
+• Teknolojiler: React, TypeScript, Tailwind CSS, Vite
+• Veri Deposu: LocalStorage (tarayıcı yerel deposu)
+• Minimum Gereksinim: Node.js 18+, Modern web tarayıcısı
+
+
+═════════════════════════════════════════════════════════════════
+                    İyi çalışmalar dileriz!
+═════════════════════════════════════════════════════════════════
