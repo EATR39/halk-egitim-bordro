@@ -11,7 +11,7 @@ export function formatCurrency(amount: number): string {
 /**
  * Saatten güne dönüştürme (8 saat = 1 gün)
  */
-export function hoursTodays(hours: number): number {
+export function hoursToDays(hours: number): number {
   return hours / 8;
 }
 
