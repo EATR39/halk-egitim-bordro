@@ -21,7 +21,7 @@ export function Select({
   id,
   ...props
 }: SelectProps) {
-  const selectId = id || `select-${Math.random().toString(36).substr(2, 9)}`;
+  const selectId = id || `select-${Math.random().toString(36).slice(2, 11)}`;
   
   return (
     <div className="w-full">

@@ -3,7 +3,7 @@ import { STORAGE_KEYS, DEFAULT_SGK_RATES } from '../utils/constants';
 
 // UUID benzeri ID üreteci
 function generateId(): string {
-  return Date.now().toString(36) + Math.random().toString(36).substr(2);
+  return Date.now().toString(36) + Math.random().toString(36).slice(2);
 }
 
 // ==================== INSTRUCTORS ====================
